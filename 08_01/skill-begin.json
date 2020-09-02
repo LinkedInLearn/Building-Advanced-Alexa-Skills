@@ -1,0 +1,123 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "capital trivia",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "QuestionIntent",
+                    "slots": [],
+                    "samples": [
+                        "next",
+                        "next question",
+                        "question",
+                        "ask me a question"
+                    ]
+                },
+                {
+                    "name": "AnswerIntent",
+                    "slots": [
+                        {
+                            "name": "answer",
+                            "type": "TriviaAnswer",
+                            "samples": [
+                                "{answer}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "option {answer}",
+                        "answer {answer}",
+                        "{answer}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "TriviaAnswer",
+                    "values": [
+                        {
+                            "id": "4",
+                            "name": {
+                                "value": "four"
+                            }
+                        },
+                        {
+                            "id": "3",
+                            "name": {
+                                "value": "three"
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "name": {
+                                "value": "two"
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "name": {
+                                "value": "one"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "AnswerIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "answer",
+                            "type": "TriviaAnswer",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.360319677203.1397526802270"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.360319677203.1397526802270",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Say, one, two, three or four as your answer"
+                    }
+                ]
+            }
+        ]
+    }
+}

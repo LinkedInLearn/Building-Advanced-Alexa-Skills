@@ -1,0 +1,51 @@
+Jungle Escape Alexa Skill Dialog
+
+@begin
+
+While exploring the jungle with an expedition team, you were attacked by some wild natives. You managed to escape but were separated from your group. The sun set, and you were forced to sleep in the dark in the hollow of a tree. You awake in the morning, stiff and sore, with no idea where you are. You only have a machete, a crude spear made from a long piece of a tree branch that was sharpened at the end, and a half a canister of water.
+
+When you look ahead, you see two paths. Do you choose the path to the left, or to the right?
+
+
+
+@go left
+
+After walking a few yards, coming charging towards you is a hyena, with teeth bared and he is hungry.
+
+You cannot run away, and he is right on you.
+
+
+@go right
+
+You stumble upon a wild boar, charging at you with tusks glaring.
+
+You cannot run away, and he is right on you.
+
+
+@draw weapon
+
+Do you draw your spear, or your machete?
+
+
+@clearing
+
+You were able to defeat the {attacker}.
+
+You stumble upon a clearing. From behind, you hear a pack of wolves coming after you. You start running, and they are closing in on you quickly.
+
+You come to the edge of a cliff  that is the end of a huge chasm, and deep below is a giant waterfall with rushing water. The pool at the end of the waterfall looks deep enough, but there is no way to tell for sure. There might be rocks down there.
+
+There is also an old wooden bridge that goes across the chasm, but below are jagged rocks. If that bridge collapses, you might fall to your death.
+
+No time to lose.
+
+Do you jump down into the pool at the bottom of the waterfall, which is a 50 foot plunge, or do you take your chances and run across the old rope bridge?
+
+
+@escaped
+
+Congratulations! You were able to get to safety and escape the jungle.
+
+The game has ended, and you have won the game.
+
+You can play again.
